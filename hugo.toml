@@ -7,7 +7,7 @@ locale = "fa-ir"
 defaultContentLanguage = "fa"
 rssLimit = 10
 theme = "hugo-texify3"
-title = "نجوایی"
+title = "Najvei.ir"
 
 [languages.fa]
   direction = "rtl"
@@ -25,10 +25,10 @@ categories = "categories"
 unsafe = true
 
 [params]
-title = "نجوایی"
-author = "نیما"
+title = "Najvaei.ir"
+author = "Nima Najvaei"
 description = "توضیح سایت شما"
-dateFormat = "2 January 2006"
+dateFormat = "January 2 2006"
 emphasisWithDots = true
 toc = true
 rootFontSize = "105%"
