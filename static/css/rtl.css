@@ -26,3 +26,21 @@ pre, code, pre *, code * {
     text-align: left !important;
     font-family: 'Courier New', monospace !important;
 }
+/* fix search bar */
+.search-wrapper {
+    direction: ltr;
+}
+
+input[type="search"],
+input[type="text"] {
+    direction: rtl;
+    text-align: right;
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+.search-icon,
+.icon-search {
+    right: auto;
+    left: 0.5rem;
+}
