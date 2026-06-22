@@ -10,8 +10,8 @@ theme = "hugo-texify3"
 title = "نجوایی"
 
 [languages.fa]
-  languagedirection = "rtl"
-  title = "نجوایی"
+  direction = "rtl"
+  title = "Najvaei.ir"
   weight = 1
 
 [pagination]

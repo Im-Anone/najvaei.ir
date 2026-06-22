@@ -34,6 +34,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
       - name: Install PostCSS
         run: npm install --prefix themes/hugo-texify3
 
