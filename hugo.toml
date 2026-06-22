@@ -1,12 +1,18 @@
-baseURL = "https://texify3.michaelneuper.com"
+baseURL = "https://najvaei.ir"
 disqusShortname = ""
 enableGitInfo = true
 enableRobotsTXT = true
-hasCJKLanguage = true
-languageCode = "en"
+hasCJKLanguage = false
+locale = "fa-ir"
+defaultContentLanguage = "fa"
 rssLimit = 10
 theme = "hugo-texify3"
-title = "TeXify3"
+title = "نجوایی"
+
+[languages.fa]
+  languagedirection = "rtl"
+  title = "نجوایی"
+  weight = 1
 
 [pagination]
 pagerSize = 5
@@ -19,15 +25,9 @@ categories = "categories"
 unsafe = true
 
 [params]
-title="TeXify3"
-author = "Michael Neuper"
-description = "TeXify3 - A LaTeX-style hugo theme with the gruvbox color scheme for personal blogging"
-footnote = """
-Powered by  <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> | 
-Theme <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
-"""
-customCSS = []
-customJS = []
+title = "نجوایی"
+author = "نیما"
+description = "توضیح سایت شما"
 dateFormat = "2 January 2006"
 emphasisWithDots = true
 toc = true
@@ -35,49 +35,27 @@ rootFontSize = "105%"
 math = true
 enableDuckDuckGoSearchBox = true
 numberedSubtitles = true
-
-  [params.commentEngine]
-  code = """
-  <script src="https://giscus.app/client.js"
-        data-repo="michaelneuper/website"
-        data-repo-id="R_kgDOIjPNaQ"
-        data-category="General"
-        data-category-id="DIC_kwDOIjPNac4CaklA"
+customCSS = ["css/rtl.css"]
+customJS = []
+footnote = """
+با استفاده از <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> |
+ قالب <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
+"""
+[params.commentEngine]
+code = """
+<script src="https://giscus.app/client.js"
+        data-repo="Im-Anone/najvaei.ir"
+        data-repo-id="R_kgDOTCO3KQ"
+        data-category="Comments"
+        data-category-id="DIC_kwDOTCO3Kc4C_sUE"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
-        data-input-position="top"
+        data-input-position="bottom"
         data-theme="gruvbox"
-        data-lang="en"
-        data-loading="lazy"
+        data-lang="fa"
         crossorigin="anonymous"
         async>
-  </script>
-  """
-
-  [params.buymeacoffee]
-  code = """
-  <script async data-name="BMC-Widget" 
-        data-cfasync="true" 
-        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-        data-id="michaelneuper" 
-        data-description="Like what I do? Buy me a coffee!" 
-        data-message="" 
-        data-color="#d79921" 
-        data-position="Right" 
-        data-x_margin="18" 
-        data-y_margin="18"
-        crossorigin="anonymous">
-  </script>
-  """
-
-  [params.sharingbuttons]
-  facebook = true
-  twitter = true
-  email = true
-  linkedin = true
-  reddit = true
-  whatsapp = true
-  hackernews = true
-  telegram = true
+</script>
+"""
