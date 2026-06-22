@@ -59,3 +59,7 @@ code = """
         async>
 </script>
 """
+[params.buymeacoffee]
+code = """
+...
+"""
