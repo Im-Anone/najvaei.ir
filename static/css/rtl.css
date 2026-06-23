@@ -216,3 +216,23 @@ a.link.tag, a.link.category {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* ===== MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .grid-container .index {
+        width: 100% !important;
+        float: none !important;
+        order: 1;
+    }
+
+    .grid-container .sidebar {
+        width: 100% !important;
+        float: none !important;
+        order: 2;
+    }
+}

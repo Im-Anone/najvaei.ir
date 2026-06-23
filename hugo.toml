@@ -26,7 +26,7 @@ unsafe = true
 
 [params]
 title = "Najvaei.ir"
-author = "Nima Najvaei"
+author = "Najvaei.ir"
 description = "توضیح سایت شما"
 dateFormat = "January 2 2006"
 emphasisWithDots = true
@@ -39,7 +39,7 @@ customCSS = ["css/rtl.css"]
 customJS = []
 github = "Im-Anone"
 footnote = """
-با استفاده از <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a>
+Powered by <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a>
 """
 [params.commentEngine]
 code = """
