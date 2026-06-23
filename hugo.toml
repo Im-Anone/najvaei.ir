@@ -64,3 +64,7 @@ code = """
 code = """
 ...
 """
+[[menus.main]]
+  name = "GitHub"
+  url = "https://github.com/Im-Anone"
+  weight = 10
