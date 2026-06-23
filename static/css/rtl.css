@@ -114,3 +114,105 @@ hr {
     background-image: none !important;
     opacity: 1 !important;
 }
+
+/* fix hr gradient for rtl */
+hr {
+    background: linear-gradient(to left, transparent, var(--fg4), transparent) !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--fg4) !important;
+    height: 0 !important;
+}
+
+/* fix footer border */
+#footer {
+    border-top: 1px solid var(--bg2) !important;
+}
+
+/* fix grid overflow */
+.grid-container {
+    overflow: hidden;
+}
+
+.grid-container .index {
+    overflow: hidden;
+    min-width: 0;
+}
+
+/* fix hr height */
+hr {
+    height: 1px !important;
+    margin-top: 1.1rem !important;
+    margin-bottom: 1.1rem !important;
+}
+
+/* fix hr and borders thickness */
+hr {
+    height: 2px !important;
+    border-bottom: 2px solid var(--fg4) !important;
+}
+
+/* fix hr right alignment */
+.grid-container .index hr {
+    margin-right: -2rem !important;
+    width: calc(100% + 2rem) !important;
+}
+
+/* thicker sidebar borders */
+.sidebar ul {
+    border-width: 2px !important;
+}
+
+/* Vazir Code font */
+@font-face {
+    font-family: 'Vazir Code';
+    src: url('/najvaei.ir/fonts/vazircode/Vazir-Code.woff') format('woff'),
+         url('/najvaei.ir/fonts/vazircode/Vazir-Code.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* use Vazir Code for sidebar tags and categories */
+.sidebar {
+    font-family: 'Vazir Code', 'Vazirmatn', sans-serif !important;
+}
+
+.sidebar * {
+    font-family: 'Vazir Code', 'Vazirmatn', sans-serif !important;
+}
+
+/* Vazir Code only for tag and category names in sidebar list */
+.sidebar ul li a {
+    font-family: 'Vazir Code', monospace !important;
+}
+
+/* Vazirmatn for sidebar headings */
+.sidebar h3.taxonomy {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+.sidebar h3.taxonomy * {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+/* Vazir Code for tag and category links in posts */
+a.link.tag, a.link.category {
+    font-family: 'Vazir Code', monospace !important;
+}
+
+/* smaller tags and latin font for english tags */
+a.link.tag, a.link.category {
+    font-size: 0.85em !important;
+    font-family: 'Latin Modern Roman', 'Vazir Code', monospace !important;
+}
+
+/* fix post metadata direction */
+.publish-metadata {
+    direction: ltr !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
