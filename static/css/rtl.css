@@ -44,3 +44,18 @@ input[type="text"] {
     right: auto;
     left: 0.5rem;
 }
+
+/* Latin Modern Roman - local */
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bolditalic.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
+
+/* Latin Modern Mono - local */
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+
+/* فارسی: Vazirmatn | انگلیسی: Latin Modern Roman */
+* {
+    font-family: 'Latin Modern Roman', 'Vazirmatn', sans-serif !important;
+}
