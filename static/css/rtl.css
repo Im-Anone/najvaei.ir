@@ -60,3 +60,13 @@ input[type="text"] {
 * {
     font-family: 'Latin Modern Roman', 'Vazirmatn', sans-serif !important;
 }
+
+/* fix hr lines */
+hr, .head-rule {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: var(--bg2) !important;
+    border: none !important;
+    margin: 1rem 0 !important;
+}
