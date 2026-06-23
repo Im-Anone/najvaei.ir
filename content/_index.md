@@ -1,4 +1,11 @@
 ---
-title: Home
+title: "خانه"
 ---
-Welcome to my site!
+
+خوش آمدید به سایت من.
+
+---
+
+### [دسته‌بندی‌ها](/categories/)
+
+### [تگ‌ها](/tags/)

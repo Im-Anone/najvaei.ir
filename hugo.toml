@@ -65,22 +65,11 @@ code = """
 ...
 """
 [[menus.main]]
-  name = "بلاگ"
+  name = "Blog"
   url = "/posts/"
   weight = 1
   pre = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>'
 
-[[menus.main]]
-  name = "دسته‌بندی‌ها"
-  url = "/categories/"
-  weight = 2
-  pre = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>'
-
-[[menus.main]]
-  name = "تگ‌ها"
-  url = "/tags/"
-  weight = 3
-  pre = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>'
 
 [[menus.main]]
   name = "GitHub"
