@@ -82,3 +82,13 @@ hr.head-rule {
     border: none !important;
     margin: 0 !important;
 }
+
+/* fix head-rule to match demo */
+hr.head-rule {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: var(--fg4, #928374) !important;
+    border: none !important;
+    margin: 0 0 1rem 0 !important;
+}
