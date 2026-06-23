@@ -1,28 +1,116 @@
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Thin.woff2') format('woff2'); font-weight: 100; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Light.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-ExtraBold.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Vazirmatn'; src: url('/fonts/vazirmatn/Vazirmatn-Black.woff2') format('woff2'); font-weight: 900; font-style: normal; font-display: swap; }
+/* ===== FONTS ===== */
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Thin.woff2') format('woff2'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Light.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-ExtraBold.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Black.woff2') format('woff2'); font-weight: 900; font-style: normal; font-display: swap; }
 
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bolditalic.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+
+/* ===== DIRECTION ===== */
+:root, body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== FONT FAMILY ===== */
 * {
-    font-family: 'Vazirmatn', sans-serif !important;
-}
-
-body {
-    direction: rtl;
-    text-align: right;
-}
-
-.nav, header, footer, article, .toc {
-    direction: rtl;
-    text-align: right;
+    font-family: 'Latin Modern Roman', 'Vazirmatn', sans-serif !important;
 }
 
 pre, code, pre *, code * {
     direction: ltr !important;
     text-align: left !important;
-    font-family: 'Courier New', monospace !important;
+    font-family: 'Latin Modern Mono', 'Courier New', monospace !important;
+}
+
+/* ===== HR LINES ===== */
+hr {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: var(--bg2) !important;
+    border: none !important;
+    margin: 1rem 0 !important;
+    box-sizing: border-box !important;
+}
+
+hr.head-rule {
+    margin: 0 0 1rem 0 !important;
+    background-color: var(--fg4, #928374) !important;
+}
+
+/* ===== SEARCH ===== */
+input[type="search"], input[type="text"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== WRAPPER ===== */
+#wrapper {
+    overflow-x: hidden;
+}
+
+/* fix hr gradient for rtl */
+hr:not(.head-rule) {
+    background: linear-gradient(to left, transparent, var(--fg4), transparent) !important;
+}
+
+/* fix hr inside index content */
+#content hr {
+    width: calc(100% + 4rem) !important;
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
+}
+
+/* fix index div and hr full width */
+.grid-container {
+    display: block !important;
+}
+
+.grid-container .sidebar {
+    float: left;
+    width: 25%;
+}
+
+.grid-container .index {
+    width: 72%;
+    float: right;
+}
+
+/* fix grid for rtl - just flip direction */
+.grid-container {
+    direction: ltr !important;
+}
+
+.grid-container .index {
+    direction: rtl;
+    text-align: right;
+}
+
+.grid-container .sidebar {
+    direction: rtl;
+    text-align: right;
+}
+
+/* solid hr like demo */
+hr {
+    background: var(--fg4) !important;
+    background-image: none !important;
+    opacity: 1 !important;
+}
+
+/* solid hr like demo */
+hr {
+    background: var(--fg4) !important;
+    background-image: none !important;
+    opacity: 1 !important;
 }

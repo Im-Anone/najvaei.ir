@@ -2,17 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-06-23T01:09:08+03:30</lastmod>
+    <loc>http://localhost:1313/najvaei.ir/categories/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first/</loc>
-    <lastmod>2026-06-23T01:09:08+03:30</lastmod>
+    <loc>http://localhost:1313/najvaei.ir/posts/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/najvaei.ir/tags/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-23T00:55:20+03:30</lastmod>
+    <loc>http://localhost:1313/najvaei.ir/posts/test/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/najvaei.ir/tags/%D8%AA%D8%B3%D8%AA/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/najvaei.ir/categories/%D8%B9%D9%85%D9%88%D9%85%DB%8C/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/najvaei.ir/tags/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C/</loc>
+    <lastmod>2026-06-23T13:46:25+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/najvaei.ir/posts/first/</loc>
+    <lastmod>2026-06-23T01:35:27+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/najvaei.ir/</loc>
+    <lastmod>2026-06-23T13:11:57+03:30</lastmod>
   </url>
 </urlset>

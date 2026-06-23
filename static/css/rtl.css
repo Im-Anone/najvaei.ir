@@ -1,6 +1,4 @@
-:root {
-    direction: rtl;
-}
+/* ===== FONTS ===== */
 @font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Thin.woff2') format('woff2'); font-weight: 100; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Light.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
@@ -10,85 +8,109 @@
 @font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-ExtraBold.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Vazirmatn'; src: url('/najvaei.ir/fonts/vazirmatn/Vazirmatn-Black.woff2') format('woff2'); font-weight: 900; font-style: normal; font-display: swap; }
 
-* {
-    font-family: 'Vazirmatn', sans-serif !important;
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bolditalic.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+
+/* ===== DIRECTION ===== */
+:root, body {
+    direction: rtl;
+    text-align: right;
 }
 
-body {
-    direction: rtl;
-    text-align: right;
-}
-.nav, header, footer, article, .toc {
-    direction: rtl;
-    text-align: right;
+/* ===== FONT FAMILY ===== */
+* {
+    font-family: 'Latin Modern Roman', 'Vazirmatn', sans-serif !important;
 }
 
 pre, code, pre *, code * {
     direction: ltr !important;
     text-align: left !important;
-    font-family: 'Courier New', monospace !important;
-}
-/* fix search bar */
-.search-wrapper {
-    direction: ltr;
+    font-family: 'Latin Modern Mono', 'Courier New', monospace !important;
 }
 
-input[type="search"],
-input[type="text"] {
-    direction: rtl;
-    text-align: right;
-    padding-right: 2.5rem;
-    padding-left: 0.5rem;
-}
-
-.search-icon,
-.icon-search {
-    right: auto;
-    left: 0.5rem;
-}
-
-/* Latin Modern Roman - local */
-@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Latin Modern Roman'; src: url('/najvaei.ir/fonts/lm/lmroman-bolditalic.otf') format('opentype'); font-weight: 700; font-style: italic; font-display: swap; }
-
-/* Latin Modern Mono - local */
-@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-bold.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
-
-/* فارسی: Vazirmatn | انگلیسی: Latin Modern Roman */
-* {
-    font-family: 'Latin Modern Roman', 'Vazirmatn', sans-serif !important;
-}
-
-/* fix hr lines */
-hr, .head-rule {
+/* ===== HR LINES ===== */
+hr {
     display: block !important;
     width: 100% !important;
     height: 2px !important;
     background-color: var(--bg2) !important;
     border: none !important;
     margin: 1rem 0 !important;
+    box-sizing: border-box !important;
 }
 
-/* fix head-rule line */
 hr.head-rule {
-    display: block !important;
-    width: 100% !important;
-    height: 2px !important;
-    background-color: var(--bg2) !important;
-    border: none !important;
-    margin: 0 !important;
-}
-
-/* fix head-rule to match demo */
-hr.head-rule {
-    display: block !important;
-    width: 100% !important;
-    height: 2px !important;
-    background-color: var(--fg4, #928374) !important;
-    border: none !important;
     margin: 0 0 1rem 0 !important;
+    background-color: var(--fg4, #928374) !important;
+}
+
+/* ===== SEARCH ===== */
+input[type="search"], input[type="text"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== WRAPPER ===== */
+#wrapper {
+    overflow-x: hidden;
+}
+
+/* fix hr gradient for rtl */
+hr:not(.head-rule) {
+    background: linear-gradient(to left, transparent, var(--fg4), transparent) !important;
+}
+
+/* fix hr inside index content */
+#content hr {
+    width: calc(100% + 4rem) !important;
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
+}
+
+/* fix index div and hr full width */
+.grid-container {
+    display: block !important;
+}
+
+.grid-container .sidebar {
+    float: left;
+    width: 25%;
+}
+
+.grid-container .index {
+    width: 72%;
+    float: right;
+}
+
+/* fix grid for rtl - just flip direction */
+.grid-container {
+    direction: ltr !important;
+}
+
+.grid-container .index {
+    direction: rtl;
+    text-align: right;
+}
+
+.grid-container .sidebar {
+    direction: rtl;
+    text-align: right;
+}
+
+/* solid hr like demo */
+hr {
+    background: var(--fg4) !important;
+    background-image: none !important;
+    opacity: 1 !important;
+}
+
+/* solid hr like demo */
+hr {
+    background: var(--fg4) !important;
+    background-image: none !important;
+    opacity: 1 !important;
 }

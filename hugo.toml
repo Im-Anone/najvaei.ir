@@ -39,8 +39,7 @@ customCSS = ["css/rtl.css"]
 customJS = []
 github = "Im-Anone"
 footnote = """
-با استفاده از <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> |
- قالب <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
+با استفاده از <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a>
 """
 [params.commentEngine]
 code = """
