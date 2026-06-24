@@ -15,6 +15,15 @@
 @font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-normal.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Latin Modern Mono'; src: url('/najvaei.ir/fonts/lm/lmmono-italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
 
+@font-face {
+    font-family: 'Vazir Code';
+    src: url('/najvaei.ir/fonts/vazircode/Vazir-Code.woff') format('woff'),
+         url('/najvaei.ir/fonts/vazircode/Vazir-Code.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ===== DIRECTION ===== */
 :root, body {
     direction: rtl;
@@ -36,16 +45,66 @@ pre, code, pre *, code * {
 hr {
     display: block !important;
     width: 100% !important;
-    height: 2px !important;
-    background-color: var(--bg2) !important;
+    height: 1px !important;
+    background: var(--fg4) !important;
     border: none !important;
-    margin: 1rem 0 !important;
+    margin: 1.1rem 0 !important;
     box-sizing: border-box !important;
 }
 
 hr.head-rule {
+    height: 2px !important;
     margin: 0 0 1rem 0 !important;
-    background-color: var(--fg4, #928374) !important;
+}
+
+/* ===== GRID ===== */
+.grid-container {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
+    direction: ltr !important;
+    overflow: hidden;
+}
+
+.grid-container .sidebar {
+    order: 1;
+    direction: rtl;
+    text-align: right;
+}
+
+.grid-container .index {
+    order: 2;
+    direction: rtl;
+    text-align: right;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.grid-container .index hr {
+    margin-right: -2rem !important;
+    width: calc(100% + 2rem) !important;
+    margin-top: 1.1rem !important;
+    margin-bottom: 1.1rem !important;
+    height: 1px !important;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar ul {
+    border-width: 2px !important;
+}
+
+.sidebar ul li a {
+    font-family: 'Vazir Code', monospace !important;
+}
+
+.sidebar h3.taxonomy,
+.sidebar h3.taxonomy * {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+/* ===== TAGS & CATEGORIES ===== */
+a.link.tag, a.link.category {
+    font-size: 0.65em !important;
+    font-family: 'Latin Modern Roman', 'Vazir Code', monospace !important;
 }
 
 /* ===== SEARCH ===== */
@@ -54,159 +113,17 @@ input[type="search"], input[type="text"] {
     text-align: right;
 }
 
+/* ===== FOOTER ===== */
+#footer {
+    border-top: 1px solid var(--bg2) !important;
+}
+
 /* ===== WRAPPER ===== */
 #wrapper {
     overflow-x: hidden;
 }
 
-/* fix hr gradient for rtl */
-hr:not(.head-rule) {
-    background: linear-gradient(to left, transparent, var(--fg4), transparent) !important;
-}
-
-/* fix hr inside index content */
-#content hr {
-    width: calc(100% + 4rem) !important;
-    margin-left: -2rem !important;
-    margin-right: -2rem !important;
-}
-
-/* fix index div and hr full width */
-.grid-container {
-    display: block !important;
-}
-
-.grid-container .sidebar {
-    float: left;
-    width: 25%;
-}
-
-.grid-container .index {
-    width: 72%;
-    float: right;
-}
-
-/* fix grid for rtl - just flip direction */
-.grid-container {
-    direction: ltr !important;
-}
-
-.grid-container .index {
-    direction: rtl;
-    text-align: right;
-}
-
-.grid-container .sidebar {
-    direction: rtl;
-    text-align: right;
-}
-
-/* solid hr like demo */
-hr {
-    background: var(--fg4) !important;
-    background-image: none !important;
-    opacity: 1 !important;
-}
-
-/* solid hr like demo */
-hr {
-    background: var(--fg4) !important;
-    background-image: none !important;
-    opacity: 1 !important;
-}
-
-/* fix hr gradient for rtl */
-hr {
-    background: linear-gradient(to left, transparent, var(--fg4), transparent) !important;
-    background-image: none !important;
-    background-color: transparent !important;
-    border-bottom: 1px solid var(--fg4) !important;
-    height: 0 !important;
-}
-
-/* fix footer border */
-#footer {
-    border-top: 1px solid var(--bg2) !important;
-}
-
-/* fix grid overflow */
-.grid-container {
-    overflow: hidden;
-}
-
-.grid-container .index {
-    overflow: hidden;
-    min-width: 0;
-}
-
-/* fix hr height */
-hr {
-    height: 1px !important;
-    margin-top: 1.1rem !important;
-    margin-bottom: 1.1rem !important;
-}
-
-/* fix hr and borders thickness */
-hr {
-    height: 2px !important;
-    border-bottom: 2px solid var(--fg4) !important;
-}
-
-/* fix hr right alignment */
-.grid-container .index hr {
-    margin-right: -2rem !important;
-    width: calc(100% + 2rem) !important;
-}
-
-/* thicker sidebar borders */
-.sidebar ul {
-    border-width: 2px !important;
-}
-
-/* Vazir Code font */
-@font-face {
-    font-family: 'Vazir Code';
-    src: url('/najvaei.ir/fonts/vazircode/Vazir-Code.woff') format('woff'),
-         url('/najvaei.ir/fonts/vazircode/Vazir-Code.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* use Vazir Code for sidebar tags and categories */
-.sidebar {
-    font-family: 'Vazir Code', 'Vazirmatn', sans-serif !important;
-}
-
-.sidebar * {
-    font-family: 'Vazir Code', 'Vazirmatn', sans-serif !important;
-}
-
-/* Vazir Code only for tag and category names in sidebar list */
-.sidebar ul li a {
-    font-family: 'Vazir Code', monospace !important;
-}
-
-/* Vazirmatn for sidebar headings */
-.sidebar h3.taxonomy {
-    font-family: 'Vazirmatn', sans-serif !important;
-}
-.sidebar h3.taxonomy * {
-    font-family: 'Vazirmatn', sans-serif !important;
-}
-
-/* Vazir Code for tag and category links in posts */
-a.link.tag, a.link.category {
-    font-family: 'Vazir Code', monospace !important;
-}
-
-/* smaller tags and latin font for english tags */
-a.link.tag, a.link.category {
-    font-size: 0.85em !important;
-    font-family: 'Latin Modern Roman', 'Vazir Code', monospace !important;
-}
-
-/* fix post metadata direction */
+/* ===== POST METADATA ===== */
 .publish-metadata {
     direction: ltr !important;
     text-align: center !important;
@@ -215,6 +132,24 @@ a.link.tag, a.link.category {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+/* ===== HEADER ===== */
+#header {
+    position: relative;
+}
+
+#header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0 3rem;
+    margin-top: -1.5rem;
+}
+
+.dark-mode-toggle {
+    right: 0 !important;
+    left: auto !important;
+    top: 0 !important;
 }
 
 /* ===== MOBILE ===== */
